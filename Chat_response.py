@@ -1,4 +1,5 @@
-CREATOR_NAME = "Your Name"
+# Rollback: revert CREATOR_NAME to "Your Name" and hardcode creator strings
+CREATOR_NAME = "Jana"
 
 RESPONSES = {
 
@@ -43,9 +44,9 @@ RESPONSES = {
             "creator", "developer", "author",
         ],
         "responses": [
-            f"I was created by Pavan_p_pureppanavar as an AIML portfolio project.",
-            f"Pavan_p_pureppanavar built me using Python - no external APIs needed!",
-            f"My creator is Pavan_p_pureppanavar, a student learning AI and Machine Learning.",
+            f"I was created by {CREATOR_NAME} as an AIML portfolio project.",
+            f"{CREATOR_NAME} built me using Python - no external APIs needed!",
+            f"My creator is {CREATOR_NAME}, a student learning AI and Machine Learning.",
         ],
     },
 
@@ -112,6 +113,7 @@ RESPONSES = {
     "help": {
         "keywords": [
             "help", "commands", "what can you do", "options", "menu", "how to use",
+            "bachav", "bachao",
         ],
         "responses": [
             (
@@ -136,7 +138,7 @@ RESPONSES = {
         "responses": [
             "Sorry, I didn't understand that. Type 'help' to see what I can do!",
             "Hmm, I'm not sure about that. Try asking about Python, AI, or a joke!",
-            "I don't know that one yet - but you can teach me! Just add it to responses.py.",
+            "I don't know that one yet - but you can teach me! Just add it to Chat_response.py.",
         ],
     },
 }

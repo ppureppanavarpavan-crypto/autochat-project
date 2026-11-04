@@ -22,7 +22,8 @@ def main():
     chatbot = AutoChat(name="AutoChat")
 
     show_welcome()
-    print(f"{chatbot.name}: Hello! I'm AutoChat. Type 'bachav' to see what I can do.\n")
+    # Rollback: revert 'help' back to 'bachav'
+    print(f"{chatbot.name}: Hello! I'm AutoChat. Type 'help' to see what I can do.\n")
 
     while True:
         # Ask the user for input (Ctrl+C or Ctrl+D ends the chat politely).
@@ -44,7 +45,8 @@ def main():
         if chatbot.is_exit_command(user_input):
             break
 
-    print("\n[Chat ended. Run 'python main.py' to start again!]")
+    # Rollback: revert 'Chatmain.py' back to 'main.py'
+    print("\n[Chat ended. Run 'python Chatmain.py' to start again!]\n")
 
 
 if __name__ == "__main__":
